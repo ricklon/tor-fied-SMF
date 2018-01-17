@@ -34,6 +34,18 @@ Passwords: **Change all passwords to something other than the default passwords!
 docker-compose build
 docker-compose up -d
 ```
+
+### Configure
+
+Go to the service and configure
+
+Service address
+```
+$ docker exec -ti torfiedsmf_tor_1 onions
+```
+
+Remember the database name is defined in the docker-compose file as "db"
+
 After you finish your installation run:
 ```
 docker exec -it torfiedsmf_apache_1 rm /var/www/html/install.php
